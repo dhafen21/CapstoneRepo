@@ -1,7 +1,7 @@
 # Team 14 Softech Code Repository
 
 
-#Overview
+#vOverview
 The CapstoneRepo holds all the necessary code for running all the hardware we have created
 for the capstone project. It is a combination of original work we have created and also
 open source code. This document explains how to initialize and run everything.
@@ -19,8 +19,6 @@ of ROS used for this project is called Melodic. Do not download kinetic.
 
 Once you have finished, clone the Capstone Repo to your catkin folder using
 
-#Running the Ros software
+# Running the Ros software
 
-1. Open a terminal and begin Ros by typing ```roscore
-
-```
+1. Open a terminal and begin Ros by typing `roscore`
