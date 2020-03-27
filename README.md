@@ -24,9 +24,10 @@ Once you have finished, clone the Capstone Repo to your catkin folder using
 ## Running the Ros software
 
 1. Open a terminal and begin Ros by typing `roscore`
-2. program the IMU
+2. program the IMU and Arduino
   * Open the Razor_AHRS.ino file located in CapstoneRepo/src/razor_imu_9dof/src/Razor_AHRS, and upload
   the code to the IMU
+  * Open the newTest.ino file in Arduino folder and program the arduino connected to the motor driver
 3. Open a new tab in the terminal, cd to the catkin folder, and
  make all the files by typing `catkin_make`
 4. To start the IMU, open a new tab in the terminal and cd to the catkin folder
@@ -35,3 +36,7 @@ Once you have finished, clone the Capstone Repo to your catkin folder using
 `rosrun imu_filter_madgwick imu_filter`
 6. Start the PID loop by opening a separate tab in the terminal, sourcing the files
   then running `rosrun beginner_tutorials listener.py`
+7. Open the connection to the arduinos by opening a newe tab in the terminal, sourcing
+  the code, then running `rosrun rosserial_arduino serial_node.py`
+8. Lastly, run the node that allows for communication from the user by opening a new tab in the
+  terminal, sourcing the code, then running `rosrun beginner_tutorials talker`
