@@ -46,6 +46,7 @@ if __name__=="__main__":
     rospy.loginfo("ROS Serial Python Node")
 
     port_name = rospy.get_param('~port','/dev/ttyUSB0')
+    port_name1 = rospy.get_param('~port','/dev/ttyUSB1')
     baud = int(rospy.get_param('~baud','57600'))
 
     # Number of seconds of sync failure after which Arduino is auto-reset.
@@ -64,8 +65,9 @@ if __name__=="__main__":
     while not rospy.is_shutdown():
         rospy.loginfo("Connecting to %s at %d baud" % (port_name, baud))
         try:
-            client = SerialClient(port_name, baud, fix_pyserial_for_test=fix_pyserial_for_test, auto_reset_timeout=auto_reset_timeout)
-            client.run()
+		client = SerialClient(port_name, baud, fix_pyserial_for_test=fix_pyserial_for_test, auto_reset_timeout=auto_reset_timeout)
+		client.run()
+
         except KeyboardInterrupt:
             break
         except SerialException:

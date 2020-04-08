@@ -88,6 +88,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/hafen23/catkin_ws/src/rosserial/rosserial_arduino/CMakeLists.txt"
   "/home/hafen23/catkin_ws/src/rosserial/rosserial_arduino/cmake/rosserial_arduino-extras.cmake.em"
   "/home/hafen23/catkin_ws/src/rosserial/rosserial_arduino/nodes/serial_node.py"
+  "/home/hafen23/catkin_ws/src/rosserial/rosserial_arduino/nodes/serial_node1.py"
+  "/home/hafen23/catkin_ws/src/rosserial/rosserial_arduino/nodes/serial_node2.py"
   "/home/hafen23/catkin_ws/src/rosserial/rosserial_arduino/package.xml"
   "/home/hafen23/catkin_ws/src/rosserial/rosserial_arduino/setup.py"
   "/home/hafen23/catkin_ws/src/rosserial/rosserial_arduino/src/rosserial_arduino/make_libraries.py"

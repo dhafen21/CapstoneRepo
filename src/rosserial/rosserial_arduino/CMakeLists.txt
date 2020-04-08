@@ -33,6 +33,6 @@ install(
 )
 
 catkin_install_python(
-  PROGRAMS src/${PROJECT_NAME}/make_libraries.py nodes/serial_node.py
+  PROGRAMS src/${PROJECT_NAME}/make_libraries.py nodes/serial_node1.py nodes/serial_node.py nodes/serial_node2.py
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
